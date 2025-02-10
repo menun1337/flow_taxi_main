@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOW TAXI - driver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background-color: #ffcc00;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+        .button:hover {
+            background-color: #ff6b81;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Driver, welcome to FLOW TAXI!</h1>
+        <div class="buttons">
+            <a href="{{ url_for('register_d') }}" class="button">Register</a>
+            <a href="{{ url_for('log_in_d') }}" class="button">Log-in</a>
+        </div>
+    </div>
+</body>
+</html>

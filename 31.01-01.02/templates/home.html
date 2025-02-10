@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOW TAXI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            width: 250px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: #fff;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            border: 3px solid #ffcc00;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .button .icon {
+            margin-right: 50px;
+            font-size: 40px;
+        }
+        .button:hover {
+            background-color: #ffcc00;
+            color: #fff;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/driver" class="button">
+            <span class="icon">🚖</span> Driver
+        </a>
+        <a href="/customer" class="button">
+            <span class="icon">👤</span> Customer
+        </a>
+    </div>
+</body>
+</html>
